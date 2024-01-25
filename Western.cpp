@@ -4,9 +4,11 @@
 #include <iostream>
 #include "Humain.h"
 using namespace std;
-//test
+//1ere partie du TP
 int main()
 {
+	//1ere partie du TP
+/*
 	Humain lucky("Lucky Luke", "coca-cola");
 	cout << "Une histoire sur "<< lucky.getNom() << endl;
 	lucky.sePresente();
@@ -18,7 +20,10 @@ int main()
 	joe->sePresente();
 	joe->boit();
 	joe->boit();
-	return 0;
+	return 0;*/
+
+	//2eme partie du TP 
+
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
