@@ -4,7 +4,7 @@
 #include <iostream>
 #include "Humain.h"
 using namespace std;
-
+//test
 int main()
 {
 	Humain lucky("Lucky Luke", "coca-cola");
