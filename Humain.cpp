@@ -19,7 +19,8 @@ void Humain::setBoissonFavorite(const string bF)
 
 void Humain::boit()
 {
-	cout << " GLOUPS ! "<<endl;
+	cout << " ( "<<nom<<" ) -- "<< "Ah un bon vert de" << boissonFavorite << " ! GLOUPS ! "<<endl;
+
 }
 
 string Humain::getNom()

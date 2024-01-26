@@ -3,7 +3,7 @@
 using namespace std;
 class Humain
 {
-private:
+protected:
 	string nom;
 	string boissonFavorite;
 

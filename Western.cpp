@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include "Humain.h"
+#include "Cowboy.h"
+#include "Dame.h"
 using namespace std;
 //1ere partie du TP
 int main()
@@ -23,6 +25,15 @@ int main()
 	return 0;*/
 
 	//2eme partie du TP 
+	Cowboy lucky("Lucky Luke");
+	Dame jenny("Jenny");
+
+	//1. La rencontre
+	lucky.sePresente();
+	jenny.sePresente();
+	jenny.changeDeRobe("verte");
+	lucky.boit();
+	jenny.boit();
 
 }
 
