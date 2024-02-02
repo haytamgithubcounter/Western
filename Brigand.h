@@ -4,12 +4,14 @@
 #include "Humain.h"
 #include <iostream>
 using namespace std;
+class Dame;
+class Cowboy;
 class Brigand :
 	public Humain
 {
 private:
 	string comportement;
-	int nbDamesEnelevees;
+	int nbDamesEnlevees;
 	int recompense;
 	bool enPrison;
 public:

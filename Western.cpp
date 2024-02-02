@@ -5,6 +5,7 @@
 #include "Humain.h"
 #include "Cowboy.h"
 #include "Dame.h"
+#include "Brigand.h"
 using namespace std;
 //1ere partie du TP
 int main()
@@ -23,7 +24,7 @@ int main()
 	joe->boit();
 	joe->boit();
 	return 0;*/
-
+/*
 	//2eme partie du TP 
 	Cowboy lucky("Lucky Luke");
 	Dame jenny("Jenny");
@@ -34,7 +35,24 @@ int main()
 	jenny.changeDeRobe("verte");
 	lucky.boit();
 	jenny.boit();
-
+*/
+   // troisieme partie du TP
+		Cowboy lucky("Lucky Luke", "coca-cola");
+		Dame jenny("Jenny");
+		Brigand joe("Joe");
+			// 1. La rencontre ...
+		lucky.sePresente();
+		jenny.sePresente();
+		// 2. Mais un brigand arrive ...
+		joe.sePresente();
+		joe.kidnappe(jenny);
+		// 3. Heureusement le cowboy s’interpose ...
+		lucky.sePresente();
+		joe.sePresente();
+		lucky.tire(joe);
+		lucky.emprisonne(joe);
+		lucky.libere(jenny);
+		return 0;
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

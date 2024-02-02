@@ -6,40 +6,60 @@ Brigand::Brigand(const string nom, const string boissonFavorite, const string co
 
 string Brigand::getComportement()
 {
-	return string();
+	return comportement;
 }
 
 int Brigand::getNbDamesEnlevees()
 {
-	return 0;
+	return nbDamesEnlevees;
+
 }
 
 int Brigand::getRecompense()
 {
-	return 0;
+	return recompense;
 }
 
 void Brigand::sePresente()
 {
+	cout << "(" << nom << ") -- " << "Bonjour, je suis " << getNom() << " le " << getComportement() << " et j’aime le " << getBoissonFavorite() << "." << endl;
 }
 
 void Brigand::kidnappe(Dame& dame)
 {
+	if (!estEnPrison())
+	{
+		dame.seFaitKidnapper();
+		nbDamesEnlevees++;
+		augmenteRecompense();
+		cout << "(" << nom << ") -- " << "Ah ah ! " << dame.getNom() << ", tu es mienne désormais !" << endl;
+	}
+
+
 }
 
 void Brigand::seFaitEmprisonne(Cowboy& cowboy)
 {
+	if (!estEnPrison())
+	{
+		enPrison = true;
+		cout << "(" << nom << ") -- " << "Damned, je suis fait ! " << cowboy.getNom() << ", tu m’as eu !" << endl;
+	}
 }
 
 void Brigand::augmenteRecompense(const int prix)
 {
+	if (prix > 0)
+		this->recompense += prix;
 }
 
 void Brigand::diminueRecompense(const int prix)
 {
+	if (prix > 0 && prix <= recompense)
+		this->recompense -= prix;
 }
 
 bool Brigand::estEnPrison()
 {
-	return false;
+	return enPrison;
 }

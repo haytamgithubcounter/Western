@@ -3,6 +3,8 @@
 #include "Humain.h"
 #include "Cowboy.h"
 using namespace std;
+class Cowboy;
+class Brigand;
 class Dame : public Humain
 {
 private:

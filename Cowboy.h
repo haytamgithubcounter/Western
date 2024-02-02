@@ -4,13 +4,15 @@
 #include "Brigand.h"
 #include "Dame.h"
 using namespace std;
+class Brigand;
+class Dame;
 class Cowboy : public Humain
 {
 private:
 	string qualite;
 	int popularite;
 public:
-	Cowboy(const string _nom = "", const string _boissonFavorite = "Whysky", const string _popularite = "vaillant");
+	Cowboy(const string _nom = "", const string _boissonFavorite = "Whysky", int _popularite = 1);
 	void sePresente() const;
 	string getNom() const;
 	int getPopularite();

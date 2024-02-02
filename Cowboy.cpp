@@ -1,6 +1,6 @@
 #include "Cowboy.h"
 
-Cowboy::Cowboy(const string _nom, const string _boissonFavorite, const string _popularite) : Humain(_nom, _boissonFavorite)
+Cowboy::Cowboy(const string _nom, const string _boissonFavorite, int _popularite) : Humain(_nom, _boissonFavorite)
 {
 	popularite = _popularite;
 }
@@ -35,10 +35,12 @@ void Cowboy::setQualite(const string qualite)
 
 void Cowboy::incrementePopularite()
 {
+	popularite++;
 }
 
 void Cowboy::decrementePopularite()
 {
+	popularite--;
 }
 
 void Cowboy::tire(const Brigand& brigand)
