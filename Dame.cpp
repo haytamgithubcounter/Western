@@ -28,3 +28,19 @@ string Dame::getNom() const
 {
 	return "Miss " + nom;
 }
+
+void Dame::seFaitKidnapper()
+{
+}
+
+void Dame::seFaitLiberer(Cowboy& cowboy)
+{
+}
+
+void Dame::hurle()
+{
+}
+
+void Dame::remercie(const Cowboy& heros)
+{
+}

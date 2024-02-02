@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Humain.h"
+#include "Cowboy.h"
 using namespace std;
 class Dame : public Humain
 {
@@ -13,5 +14,9 @@ public:
 	void changeDeRobe(const string _couleurRobe);
 	void sePresente() const;
 	string getNom() const;
+	void seFaitKidnapper();
+	void seFaitLiberer(Cowboy& cowboy);
+	void hurle();
+	void remercie(const Cowboy& heros);
 };
 

@@ -14,3 +14,41 @@ string Cowboy::getNom() const
 {
 	return nom;
 }
+
+int Cowboy::getPopularite()
+{
+	return 0;
+}
+
+void Cowboy::setPopularite(const int popularite)
+{
+}
+
+string Cowboy::getQualite()
+{
+	return string();
+}
+
+void Cowboy::setQualite(const string qualite)
+{
+}
+
+void Cowboy::incrementePopularite()
+{
+}
+
+void Cowboy::decrementePopularite()
+{
+}
+
+void Cowboy::tire(const Brigand& brigand)
+{
+}
+
+void Cowboy::emprisonne(Brigand& brigand)
+{
+}
+
+void Cowboy::libere(Dame& dame)
+{
+}
