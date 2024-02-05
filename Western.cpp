@@ -36,7 +36,7 @@ int main()
 	lucky.boit();
 	jenny.boit();
 */
-   // troisieme partie du TP
+     // troisieme partie du TP
 		Cowboy lucky("Lucky Luke", "coca-cola");
 		Dame jenny("Jenny");
 		Brigand joe("Joe");

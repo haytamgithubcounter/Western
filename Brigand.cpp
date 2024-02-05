@@ -1,6 +1,6 @@
 #include "Brigand.h"
 
-Brigand::Brigand(const string nom, const string boissonFavorite, const string comportement)
+Brigand::Brigand(const string nom, const string boissonFavorite, const string comportement, bool enPrison, int nbDamesEnlevees, int recompense)
 {
 }
 
@@ -20,9 +20,14 @@ int Brigand::getRecompense()
 	return recompense;
 }
 
+string Brigand::getNom()
+{
+	return nom;
+}
+
 void Brigand::sePresente()
 {
-	cout << "(" << nom << ") -- " << "Bonjour, je suis " << getNom() << " le " << getComportement() << " et j’aime le " << getBoissonFavorite() << "." << endl;
+	cout << "(" << getNom() << ") -- " << "Bonjour, je suis " << getNom() << " le " << getComportement() << " et j’aime le " << getBoissonFavorite() << "." << endl;
 }
 
 void Brigand::kidnappe(Dame& dame)
@@ -43,7 +48,7 @@ void Brigand::seFaitEmprisonne(Cowboy& cowboy)
 	if (!estEnPrison())
 	{
 		enPrison = true;
-		cout << "(" << nom << ") -- " << "Damned, je suis fait ! " << cowboy.getNom() << ", tu m’as eu !" << endl;
+		cout << "(" << getNom() << ") -- " << "Damned, je suis fait ! " << cowboy.getNom() << ", tu m’as eu !" << endl;
 	}
 }
 

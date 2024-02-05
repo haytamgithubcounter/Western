@@ -15,10 +15,11 @@ private:
 	int recompense;
 	bool enPrison;
 public:
-	Brigand(const string nom = "", const string boissonFavorite = "tord-boyaux", const string comportement = " méchant ");
+	Brigand(const string nom = "", const string boissonFavorite = "tord-boyaux", const string comportement = " méchant ", bool enPrison=false, int nbDamesEnlevees=0, int recompense=0);
 	string getComportement();
 	int getNbDamesEnlevees();
 	int getRecompense();
+	string getNom();
 	void sePresente();
 	void kidnappe(Dame& dame);
 	void seFaitEmprisonne(Cowboy& cowboy);
